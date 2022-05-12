@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function calculator</title>
+</head>
+<body>
+    <input type="text" id="text1" placeholder="Enter 1st value">
+    <input type="text" id="text2" placeholder="Enter 1st value">
+    <input type="button" value="sum" onclick="sum()">
+    <input type="button" value="sub" onclick="sub()">
+    <input type="button" value="multi" onclick="multi()">
+    <input type="button" value="divd" onclick="divd()">
+    <input type="button" value="percentage" onclick="percentage()">
+    <input type="button" value="All" onclick="All()">
+    <p id="yuvraj"></p>
+    <p id="yuvraj2"></p>
+    <p id="yuvraj3"></p>
+    <p id="yuvraj4"></p>
+    <p id="yuvraj5"></p>
+    <p id="yuvraj6"></p>
+    <script>
+        function sum()
+     {
+       a=document.getElementById("text1").value;
+       b=document.getElementById("text2").value;
+    c=Number(a)+Number(b);
+    document.getElementById("yuvraj").innerHTML=("Addition is ="+c);
+        }
+        function sub()
+     {
+       a=document.getElementById("text1").value;
+       b=document.getElementById("text2").value;
+    c=Number(a)-Number(b);
+    document.getElementById("yuvraj2").innerHTML=("Substraction is ="+c);
+        }
+        function multi()
+     {
+       a=document.getElementById("text1").value;
+       b=document.getElementById("text2").value;
+    c=Number(a)*Number(b);
+    document.getElementById("yuvraj3").innerHTML=("Multiplication is ="+c);
+        }
+        function divd()
+     {
+       a=document.getElementById("text1").value;
+       b=document.getElementById("text2").value;
+    c=Number(a)/Number(b);
+    document.getElementById("yuvraj4").innerHTML=("Dividation is ="+c);
+        }
+        function percentage()
+     {
+       a=document.getElementById("text1").value;
+       b=document.getElementById("text2").value;
+    c=(Number(a)*Number(b))/100;
+    document.getElementById("yuvraj5").innerHTML=("Persentage is ="+c);
+        }
+        function All()
+     {
+       a=document.getElementById("text1").value;
+       b=document.getElementById("text2").value;
+       c=Number(a)+Number(b);
+       d=Number(a)-Number(b);
+       e=Number(a)*Number(b);
+       f=Number(a)/Number(b);
+       g=(Number(a)*Number(b))/100;
+    document.getElementById("yuvraj").innerHTML=("Addition is ="+c);
+    document.getElementById("yuvraj2").innerHTML=("Substraction is ="+c);
+    document.getElementById("yuvraj3").innerHTML=("Multiplication is ="+c);
+    document.getElementById("yuvraj4").innerHTML=("Dividation is ="+c);
+    document.getElementById("yuvraj5").innerHTML=("Persentage is ="+g);
+        }
+
+
+    </script>
+    
+</body>
+</html>
